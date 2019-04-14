@@ -1,0 +1,129 @@
+BUTTONS ALGORITHM
+
+Each seat contains three buttons:
+1) Marked "RECLINE"
+2) Marked "CALL ATTENDANT"
+3) Marked "LIGHT"
+
+The buttons, when enabled, work as follows:
+
+RECLINE operates on seat +1 col +2 rows and RINGS BELL there
+
+LIGHT operates on seat +4 col +3 rows, and TOGGLES RECLINE there
+
+BELL operates on seat -1 col +1 row and TOGGLES LIGHT there
+
+
+The algorithm is also revealed when the player presses any of the
+buttons from any seat when the seat buttons are DISABLED.  What happens
+then is that the button triggers a recorded announcement audible only
+over the headphones;  that announcement includes the location of the
+seat to which it is wired, NOT to the seat which the player is actually
+in.  Player has to be IN the seat with the Headphones both plugged in
+and being worn before he can hear the message.  He also has to be in the
+seat, either with or without headphones, before he can press the button.
+
+BUTTONS PLAY
+
+The player always starts in 3B.  If he presses a button at this point,
+he hears the metallic whispering which only lasts for that turn.  To
+hear it properly he has to wear the headphones and plug them in.  He can
+press each button and get the same message repeatedly.
+
+Once he starts wandering around the cabin he could theoretically map it
+in 14 turns.  After fourteen turns the FASTEN SEAT BELT SIGN comes on
+and he has four turns to get back before being forced back by the
+stewardess. 
+
+At this point he should have mapped the cabin.  His return to 3B starts
+the meal service routine.  Only when all meals have been served do we
+activate the buttons.  The FASTEN SEAT BELTS light goes out and he is
+free to wander around the cabin or eat his meal or return to ANOTHER
+seat. 
+
+POSSIBLE PLAYS
+
+1)
+
+LOSER.  He eats his meal like a good boy.  After a number of turns a
+neighbour will complain about his halitosis, the stew will bring him an
+electric toothbrush and tell him to clean his teeth.
+
+1a) DECLINES.  He dies of halitosis and so does everyone else.  They
+continue to nag at him after death (2 turns) and reboot.
+
+1b) ACCEPTS.  He goes to the bathroom to clean his teeth.
+1bi) SUCCEEDS.  He plugs in the toothbrush which activates the john,
+sending it into a frenzy and sucking him below the surface.
+***BOG NOTE*** at all other times the door is shut and groaning can be
+heard from behind the door.
+1bii) FAILS to plug the toothbrush in and dies of halitosis except
+nobody else dies since you are sealed off.  However when the aeroplane
+lands the entire ground crew are killed and your name is reviled
+posthumously. 
+
+2)  LOSER
+
+Player does NOT eat his meal but does not solve the buttons puzzle.
+
+He will be shepherded back to his seat at frequent intervals by the
+attendant and told that if he does not eat his meal they will be unable
+to take the tray away, and if they are unable to take the tray away the
+table will not be able to be safely stowed in accordance with FAA
+regulations and therefore the plane will be unable to land and will
+therefore run out of fuel and crash with the inevitable death of
+everyone on board.  If he says "Fuck that, buster", it all comes true.
+
+ALTERNATIVE if he doesn't eat his meal it will eventually eat its way
+through the plate, through the table, slither onto the floor, crawl
+around the cabin reeking and humming, eat through the floor and cause
+explosion decompression.  Dead.
+
+
+3) WIN
+
+The player does NOT eat his food but instead solves the algorithm puzzle
+and eventually (within the meal-escape time) manages to find the Light
+switch in 6E which will splat the seat in front of 3B thus smashing his
+tray into the back of the seat and returning 2B to an upright position
+in preparation for landing at this time.  
+
+As a reward for winning this winsome little puzzlette,  THE MISSING
+CORNER OF THE FLIGHT SAFETY CARD falls out of seat 2B.  You smother your
+disgust at the flecks of dried llama-spit and examine it.  It shows a
+crudely-drawn picture (by Zalagasa's leading primitivist) of a misshapen
+stewardess apparently standing underneath a rather wrinkled and colossal
+mushroom on which is written the words "Stinglai k'aabi".
+
+We now control the stewardess to two more appearances.  FIRST, she now
+appears and tells player that there is a call for him on the telephone. 
+To the admiring glances of the hateful and ugly passengers he walks to
+the telephone and finds that it is the waitress from the cafe wanting to
+know if he left her a gratuity.  She is leaving an address to which he
+can mail it (which is in fact his own address) when she is cut off.  He
+overhears the captian talking to ATC saying that the aeroplane has lost
+control (Apparently some noxious substance has eaten its way through the
+hydraulic lines on the port side) and will be crashing in five minutes. 
+ATC informs him that he has not filed a flight plan for a crash etc. 
+Rings off.
+
+Stewardess reappears and player asks for a stinglai k'aabi and is given
+one.  He then has to open the hatch.  Announcement from stewardess. 
+Player has Jump, Jump, any char., and out.  Door slams shut, parachute
+catches.  Knock on door, stew opens it, "Oh - you fell for the old
+'we're going to crash' routine, did you?  Have a nice day!"  
+
+TO POT.
+
+LOSE CASES AFTER WIN BUTTON.
+
+1) Doesn't spot parachute puzzle.
+
+2) Doesn't answer phone.
+
+3) Won't jump.
+
+4) Doesn't even open hatch.
+
+
+PLANE CRASH ends each.

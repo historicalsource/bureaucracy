@@ -1,0 +1,94 @@
+AIRPLANE SEQUENCE
+
+
+
+WINNING CASE NO 1
+
+SEAT 3B
+
+You are sitting in an incredibly luxurious Air Zalagasa FubAero 7-11
+seat 30,000 feet over somewhere which you don't know where it is.
+
+>EXAMINE THE SEAT
+
+It is an incredibly luxurious FubAero ComfoMat (TM) Air Zalagasa seat,
+equipped with a recline button, a headphone socket, a light switch and a
+stewardess call button.  A pocket in front holds literature.
+
+>PRESS THE RECLINE {ANY} BUTTON
+
+You hear a tiny metallic voice whispering nearby.
+
+>LISTEN TO THE VOICE
+
+You cannot hear it clearly without the proper equipment.
+
+>LOOK IN THE POCKET
+
+The seat pocket contains a set of headphones, a copy of Ai-Ai Life, the
+in-flight magazine of Air Zalagasa, and a safety card.
+
+>GET THE HEADPHONES.PLUG THEM INTO THE SEAT.
+
+The voice is now a little louder but still unclear.
+
+>WEAR THE HEADPHONES
+
+You hear an announcement.  "Welcome to seat {WRONG SEATNUM}.   Your
+luxury Air Zalagasa flight has been equipped for your convenience with
+ComfoMat (TM) electrically-controlled seats.  For your safety and
+comfort, the controls located at your passenger station have been
+centrally disabled at this time.  We will be making this facility
+available to you after take off, or when we have reached our cruising
+altitude.  Or possibly when we have served dinner. Or  when we feel like
+it."
+
+>READ THE MAGAZINE
+
+No.
+
+>EXAMINE THE MAGAZINE
+A card falls out and flutters underneath your seat, which has been specially
+designed so that anything which flutters underneath it cannot be retrieved.
+
+>EXAMINE THE CARD
+
+This is a shiny card showing happy Zalagasans in a shiny Air Zalagasa
+airplane to which all sorts of terrible things are happening. 
+The first picture shows a happy smiling stewardess making an announcement
+in very very small type.  The second picture shows some happy, smiling
+Zalagasan passengers removing false teeth, sepctacles, ornamental nose
+bones and so forth.  The third picture shows
+some Zalagasans who are almost certainly happy and smiling but you
+can't be sure because they are all bent double clasping their knees.
+The fourth picture appears to have been chewed by a llama so you can't
+tell what the happy smiling Zalagasans which it undoubtedly showed are
+actually doing.
+
+>READ THE SMALL PRINT
+
+The small print coming out of the stewardess's mouth says "M'baka
+n'ka umtogo bokaki m'Great Big Plane Crash n'gaga five minutes,
+okaka m'sidli ik ik togo paku."
+
+>PRESS THE STEWARDESS BUTTON
+
+Your seat reclines slightly, remembers that it has been centrally
+disabled for your comfort and safety, pauses, and returns to its
+full upright position.
+
+>FEEL UNDER THE SEAT
+
+You feel the edge of a card.
+
+>GET THE CARD
+
+
+Taken.
+
+>EXAMINE IT.
+
+[SHOW COMPLAINTS FORM]
+
+
+

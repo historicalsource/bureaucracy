@@ -1,0 +1,181 @@
+"MACROS for BUREAUCRACY: (C)1987 Infocom, Inc. All rights reserved."
+
+<FILE-FLAGS MDL-ZIL?>
+
+<MSETG SYSTOLIC-SHIFT 256>
+
+<MSETG C-ENABLED? 0>
+
+<MSETG C-ENABLED 1>
+
+<MSETG C-DISABLED 0>
+
+<TELL-TOKENS (CR CRLF |)       <ZCRLF>
+	     (N NUM) *       <PRINTN .X>
+	     (C CHAR CHR) *  <PRINTC .X>
+	     Q *	     <PRINTD .X>
+	     (D DESC) *      <DPRINT .X>
+	     (A AN) *	     <PRINTA .X>
+	     CA *	     <CPRINTA .X>
+	     THE *	     <THE-PRINT .X>
+	     CTHE *	     <CTHE-PRINT .X>
+	     THEO	     <THE-PRINT>
+	     CTHEO	     <CTHE-PRINT>
+	     CTHEI	     <CTHEI-PRINT>
+	     THEI	     <THEI-PRINT>
+	     ITAL *:STRING   <ITALICIZE .X>
+	     WORD *	     <DO-PRINT-WORD .X>
+	     PONE *	     <PRINT-PICK-ONE .X>
+	     PNEXT *	     <PRINT-PICK-NEXT .X>
+	     >
+
+<CONSTANT YOURE-ALREADY-STR "You're already ">
+
+<CONSTANT THIS-IS "This is ">
+
+<DEFMAC YOURE-ALREADY ('STR "OPT" (CR? T))
+  <COND (.CR?
+	 <FORM TELL ',YOURE-ALREADY-STR .STR ',PERIOD>)
+	(T
+	 <FORM TELL ',YOURE-ALREADY-STR .STR>)>>
+
+<DEFMAC VERB? ("ARGS" ATMS)
+	<MULTIFROB PRSA .ATMS>>
+
+<DEFMAC PRSO? ("ARGS" ATMS)
+	<MULTIFROB PRSO .ATMS>>
+
+<DEFMAC PRSI? ("ARGS" ATMS)
+	<MULTIFROB PRSI .ATMS>>
+
+<DEFMAC HERE? ("ARGS" ATMS)
+	<MULTIFROB HERE .ATMS>>
+
+<DEFINE20 MULTIFROB (X ATMS "AUX" (OO (OR)) (O .OO) (LL (T)) (L .LL) ATM)
+	<REPEAT ()
+		<COND (<EMPTY? .ATMS>
+		       <RETURN!- <COND (<LENGTH? .OO 1>
+					<ERROR .X>)
+				       (<LENGTH? .OO 2>
+					<NTH .OO 2>)
+				       (ELSE
+					<CHTYPE .OO FORM>)>>)>
+		<REPEAT ()
+			<COND (<EMPTY? .ATMS>
+			       <RETURN!->)>
+			<SET ATM <NTH .ATMS 1>>
+			<SET L <REST <PUTREST
+				      .L
+				      (<COND (<TYPE? .ATM ATOM>
+					      <CHTYPE <COND (<==? .X PRSA>
+							     <PARSE
+							      <STRING "V?"
+							       <SPNAME .ATM>>>)
+							    (T .ATM)> GVAL>)
+					     (ELSE .ATM)>)>>>
+			<SET ATMS <REST .ATMS>>
+			<COND (<==? <LENGTH .LL> 4>
+			       <RETURN!->)>>
+		<SET O <REST <PUTREST .O
+				      (<FORM EQUAL? <CHTYPE .X GVAL> !<REST .LL>>)>>>
+		<SET LL (T)>
+		<SET L .LL>>>
+
+; <DEFMAC BSET ('OBJ "ARGS" BITS)
+	<MULTIBITS FSET .OBJ .BITS>>
+
+; <DEFMAC BCLEAR ('OBJ "ARGS" BITS)
+	<MULTIBITS FCLEAR .OBJ .BITS>>
+
+; <DEFMAC BSET? ('OBJ "ARGS" BITS)
+	<MULTIBITS FSET? .OBJ .BITS>>
+
+; <DEFINE20 MULTIBITS (X OBJ ATMS "AUX" (O ()) ATM) 
+	<REPEAT ()
+		<COND (<EMPTY? .ATMS>
+		       <RETURN!- <COND (<LENGTH? .O 1>
+					<NTH .O 1>)
+				       (<==? .X FSET?>
+				        <FORM OR !.O>)
+				       (ELSE
+					<FORM PROG () !.O>)>>)>
+		<SET ATM <NTH .ATMS 1>>
+		<SET ATMS <REST .ATMS>>
+		<SET O
+		     (<FORM .X
+			    .OBJ
+			    <COND (<TYPE? .ATM FORM>
+				   .ATM)
+				  (ELSE
+				   <FORM GVAL .ATM>)>>
+		      !.O)>>>
+
+<DEFMAC PROB ('BASE?)
+	<FORM NOT <FORM L? .BASE? '<ZRANDOM 100>>>>
+
+<DEFMAC ZIL? ()
+	<COND (<OR <NOT <GASSIGNED? LOWCORE>>
+		   <NOT <TYPE? ,LOWCORE MACRO>>>
+	       <FORM ZERO? '<LOWCORE (SERIAL 0)>>)
+	      (T
+	       <FORM ZERO? <EXPAND '<LOWCORE (SERIAL 0)>>>)>>
+
+<DEFMAC ENABLE ('INT)
+	<FORM C-ENABLED? .INT 1>>
+
+<DEFMAC DISABLE ('INT)
+	<FORM C-ENABLED? .INT 0>>
+
+<DEFMAC GET-REXIT-ROOM ('PT)
+	<FORM GET .PT ',REXIT>>
+
+<DEFMAC GET-DOOR-OBJ ('PT)
+	<FORM GET .PT ',DEXITOBJ>>
+
+<DEFMAC GET/B ('TBL 'PTR)
+	<FORM GET .TBL .PTR>>
+
+<DEFMAC RMGL-SIZE ('TBL)
+	<FORM - <FORM / <FORM PTSIZE .TBL> 2> 1>>
+
+<DEFMAC MAKE ('OBJ 'FLAG)
+	<FORM FSET .OBJ .FLAG>>
+
+<DEFMAC UNMAKE ('OBJ 'FLAG)
+	<FORM FCLEAR .OBJ .FLAG>>
+
+<DEFMAC IS? ('OBJ 'FLAG)
+	<FORM FSET? .OBJ .FLAG>>
+
+<DEFMAC T? ('TERM)
+	<FORM NOT <FORM ZERO? .TERM>>>
+
+<DEFMAC ABS ('NUM)
+	<FORM COND (<FORM L? .NUM 0>
+		    <FORM - 0 .NUM>)
+	           (T
+		    .NUM)>>
+
+<DEFMAC QUOTE? ()
+	<FORM COND (<FORM NOT <FORM EQUAL?
+				    <CHTYPE WINNER GVAL>
+				    <CHTYPE PLAYER GVAL>>>
+		    <FORM PRINTC 34>)>> 
+
+<DEFMAC SPACE ()
+	<FORM PRINTC 32>>
+
+<DEFMAC THIS-PRSO? ()
+	<FORM ZERO? <CHTYPE NOW-PRSI? GVAL>>>
+
+<DEFMAC THIS-PRSI? ()
+	<FORM NOT <FORM ZERO? <CHTYPE NOW-PRSI? GVAL>>>>
+
+<DEFINE20 STR-TABLE (STR:STRING "AUX" (FIRST T))
+	  <MAPF ,TABLE
+		<FUNCTION (X)
+		     <COND (.FIRST
+			    <SET FIRST <>>
+			    <MAPRET (BYTE PURE LENGTH) <CHTYPE .X FIX>>)
+			   (ELSE <CHTYPE .X FIX>)>>
+		.STR>>

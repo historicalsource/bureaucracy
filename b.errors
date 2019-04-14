@@ -1,0 +1,37 @@
+Assembling B.ZAP.61 on Saturday, May 21, 1988 16:43:58
+Release: 160
+
+    64	Inserting BFREQ.ZAP.60	   (640 bytes)
+   704	Inserting BDAT.ZAP.57	 (36426 bytes)
+ 37130	Inserting MISC.ZAP.43	  (3743 bytes)
+ 40873	Inserting CLOCKER.ZAP.35	   (438 bytes)
+ 41311	Inserting PARSER.ZAP.36	 (12998 bytes)
+ 54309	Inserting BPUR.ZAP.57	  (4384 bytes)
+ 58693	Inserting OTHER-MISC.ZAP.35	  (3382 bytes)
+ 62075	Inserting VERBS.ZAP.36	 (17870 bytes)
+ 79945	Inserting EVENTS.ZAP.36	  (6767 bytes)
+ 86712	Inserting PEOPLE.ZAP.36	 (11090 bytes)
+ 97802	Inserting PLACES.ZAP.35	  (6292 bytes)
+104094	Inserting THINGS.ZAP.35	 (26700 bytes)
+130794	Inserting FORMS.ZAP.35	  (2517 bytes)
+133311	Inserting COMPUTER.ZAP.37	  (4888 bytes)
+138199	Inserting NNAIRPORT.ZAP.36	 (16794 bytes)
+154993	Inserting PARANOID.ZAP.33	 (10735 bytes)
+165728	Inserting ZALAGASA.ZAP.33	  (4293 bytes)
+170021	Inserting MAZE.ZAP.34	  (7780 bytes)
+177801	Inserting MUMBLE.ZAP.33	   (930 bytes)
+178731	Inserting BANK.ZAP.34	  (9432 bytes)
+188163	Inserting XXJET.ZAP.32	 (30155 bytes)
+218318	Inserting BSTR.ZAP.53	 (25206 bytes)
+
+*000000000000* global undefined:  17586, 16713, 15842, 15826, 15814, 15802, 15772, 15756, 15744, 15728, 15718, 15708, 15698, 15688, 15672, 15660, 15650, 15640, 15626, 15614, 14248, 14236, 14226, 14210, 13998, 13646
+#BYTE global undefined:  17585, 16712, 15841, 15825, 15813, 15801, 15771, 15755, 15743, 15727, 15717, 15707, 15697, 15687, 15671, 15659, 15649, 15639, 15625, 15613, 14247, 14235, 14225, 14209, 13997, 13645
+
+255 objects.
+240 globals.
+1416 word vocabulary.
+
+243524 bytes (238K).
+ 37130 bytes of preload.
+ 17667 bytes of impure.
+Outputting symbol tables

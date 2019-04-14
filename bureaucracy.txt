@@ -1,0 +1,69 @@
+Ideas for Bureaucracy?
+----------------------
+The global concept for this game can be summarized by the line "Just because
+you're paranoid doesn't mean that everybody isn't out to get you."
+
+We've all had the feeling from time to time that somebody (particularly
+those small, beady-eyed bureaucrats who work for banks, insurance companies,
+etc.) is out to get us.  This game provides the answer: In fact, there is
+a massive conspiracy to do just that.  And things are stranger than that,
+because this conspiracy is centered in some sort of fantastical underground
+(literally) catacomb, connecting all of these various dens of iniquity.
+
+The player, when he successfully completes the game, will have the
+intense satisfaction of having crushed the nameless and faceless hoard
+of bureaucrats, and, with luck, having gotten the bank to acknowledge his
+change of address (or whatever the player's initial task is set up to be).
+
+--
+
+This game is intended as a kind of dark comedy.  The mood which is to
+be created is one of frustration, anger, and eventually paranoia as
+everything in the player's life goes from bad to worse, all because
+of petty errors at the bank, etc.
+
+At some point, the player can gain access to the 'infernal regions',
+where some bizarre series of accomplishments will have to be made in
+order to destroy the enemy's apparatus.
+
+One possible source of problems is trying to do the things that
+the bureaucracy hates most: folding, spindling, and mutiliating punch
+cards, filling out forms incorrectly, perhaps stealing rubber stamps
+and stamping forms improperly, and otherwise botching up the works.
+Perhaps this type of problem in the above-ground area will help create
+a diversion allowing access to the underground where more bizarre
+things will happen.
+
+Presumably the game starts with the player needing to get some very
+simple task done (e.g. getting the bank to acknowledge a change of
+address form). This will turn into more of a problem than it seems
+and events will cause such things as his credit cards getting recalled,
+his house getting repossessed, etc. leading to absurd heights of
+nonsense. Clearly, at some point the player will realize that things
+are getting out of hand.
+
+Confronting the various bureaucrats will be no easy task, since they
+probably won't want to talk with you, preferring that you fill out
+a request for conversation form. My guess is that no matter what you
+try to do, you can't get them to answer questions very reliably (which
+fits in well with parser limitations).
+
+--
+
+Places of Interest
+
+Your Home - probably just a few rooms a la Hitchhiker's
+
+Outside your Home - front steps, etc.
+
+Bank - your bank, with a number of rooms, for tellers, safe deposit
+boxes, vault, waiting area, etc.
+
+Post Office - your local post office
+
+Insurance Company - 
+
+Underground - Lots of stuff here, maybe some sort of semi-militaristic
+order of bureaucrats with lots of arcane machinery linked up to a gigantic
+computer which controls the hoard. Perhaps they all turn out to be
+androids or some such.
